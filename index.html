@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teinamento javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+     <h1>contador</h1>
+    </header>
+     <section>
+
+        <div id="area_dados">
+            Inicio:
+            <input type="number" name="inicio" id="inicio">
+            Fim:
+            <input type="number" name="fim" id="fim">
+            Intervalo:
+            <input type="number" name="Intervalo" id="Intervalo" minlength="1" required>
+
+            <input id="butao" onclick="contador()" type="button" value="Contar">
+        </div>
+
+        <div id="msg">
+            Preparando contagem . . .
+        </div>
+
+
+
+     </section>
+     <footer>
+         <p>&copy; contador dinâmico </p>
+     </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
