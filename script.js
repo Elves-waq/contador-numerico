@@ -3,7 +3,7 @@ function contador(){
     let fim = document.getElementById('fim');
     let inter = document.getElementById('Intervalo');
     let msg = document.getElementById('msg')
-    
+    // vericação de campos
     if (inicio.value.length == 0 || fim.value.length == 0 || inter.value.length == 0){
         window.alert("[ERRO] Faltam dados!");
     }else{
@@ -16,7 +16,7 @@ function contador(){
            window.alert("intervalo invalido considere o valor 1");
            p = 1 ;
        }
-
+    //    valor crescente
        if(i < f){
              for(let c = i ; c <= f ; c += p){
             msg.innerHTML += ` ${c} , `;
@@ -24,6 +24,7 @@ function contador(){
                 }
        
        }else{
+        //    valor decrescente
            for(let c = i ; c >= f ; c -= p){
                msg.innerHTML += ` ${c},`;
 
